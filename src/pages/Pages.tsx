@@ -19,7 +19,9 @@ export const Pages = () => {
             <Route path={PATH.PROFILE} element={<Profile/>}/>
             <Route path={PATH.NEW_PASSWORD} element={<NewPassword/>}/>
             <Route path={PATH.TEST_SUPER_COMPONENTS} element={<TestSuperComponents/>}/>
-            <Route path={'/*'} element={<Error404/>}/>
+            {/*<Route path={'*'} element={<Error404/>}/>*/}
+            <Route path={'/404'} element={<Error404/>}/>
+            <Route path={'*'} element={<Navigate to={'/404'}/>}/>
         </Routes>
     )
 }
