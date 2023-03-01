@@ -9,7 +9,7 @@ import {NewPassword} from "../features/auth/NewPassword";
 import {TestSuperComponents} from "../common/components/superComponents/TestSuperComponents";
 import Error404 from "./Error404";
 
-export const Pages = () => {
+export const Router = () => {
     return (
             <Routes>
                 <Route path={'/'} element={<Navigate to={PATH.TEST_SUPER_COMPONENTS}/>}/>
@@ -19,9 +19,7 @@ export const Pages = () => {
                 <Route path={PATH.PROFILE} element={<Profile/>}/>
                 <Route path={PATH.NEW_PASSWORD} element={<NewPassword/>}/>
                 <Route path={PATH.TEST_SUPER_COMPONENTS} element={<TestSuperComponents/>}/>
-                {/*<Route path={'/*'} element={<Error404/>}/>*/}
-                <Route path={'/404'} element={<Error404/>}/>
-                <Route path={'*'} element={<Navigate to={'/404'}/>}/>
+                <Route path={'*'} element={<Error404/>} />
             </Routes>
     )
 }

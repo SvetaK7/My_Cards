@@ -4,5 +4,5 @@ export const PATH = {
     RECOVERY: '/recovery',
     PROFILE: '/profile',
     NEW_PASSWORD: '/new-password',
-    TEST_SUPER_COMPONENTS: '/test-super-components'
+    TEST_SUPER_COMPONENTS: '/test-super-components',
 } as const
